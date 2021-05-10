@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UnimaxEMRModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EMRN">
+    <Key>
+      <PropertyRef Name="GenDate" />
+      <PropertyRef Name="SeqNo" />
+    </Key>
+    <Property Name="GenDate" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="SeqNo" Type="decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="FormNo" Type="int" />
+    <Property Name="Clerk" Type="varchar" MaxLength="10" />
+    <Property Name="SysDate" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="SysTime" Type="int" />
+    <Property Name="CertDate" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="CertTime" Type="int" />
+    <Property Name="Finished" Type="char" MaxLength="1" />
+    <Property Name="TransNo" Type="varchar" MaxLength="16" />
+    <Property Name="ProgID" Type="varchar" MaxLength="40" />
+    <Property Name="SysID" Type="varchar" MaxLength="40" />
+    <Property Name="Computer" Type="varchar" MaxLength="40" />
+    <Property Name="ChartNo" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="KeyDate" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="DupNo" Type="char" MaxLength="1" />
+    <Property Name="BedNo" Type="varchar" MaxLength="10" />
+    <Property Name="Source" Type="char" MaxLength="1" />
+    <Property Name="INPSerno" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="PtName" Type="varchar" MaxLength="40" />
+    <Property Name="BirthDate" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="Age" Type="int" />
+    <Property Name="SEX" Type="nvarchar" MaxLength="3" />
+    <Property Name="IDNo" Type="varchar" MaxLength="20" />
+    <Property Name="Opdkey" Type="varchar" MaxLength="23" />
+    <Property Name="Batch" Type="char" MaxLength="1" />
+    <Property Name="Filler" Type="varchar" MaxLength="180" />
+    <Property Name="Zone" Type="char" MaxLength="1" />
+    <Property Name="SubForm" Type="varchar" MaxLength="20" />
+    <Property Name="ExtCode" Type="varchar" MaxLength="20" />
+    <Property Name="SpecialChart" Type="varchar" MaxLength="10" />
+    <Property Name="DocumentNo" Type="varchar" MaxLength="60" />
+    <Property Name="Content" Type="image" />
+    <Property Name="ImageFileName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModDate" Type="datetime" />
+    <Property Name="ModUser" Type="varchar" MaxLength="10" />
+    <Property Name="COLLECTDATE" Type="varchar" MaxLength="8" />
+    <Property Name="COLLECTSEQ" Type="varchar" MaxLength="8" />
+    <Property Name="COLLECTCLERK" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="UnimaxEMRModelStoreContainer">
+    <EntitySet Name="EMRN" EntityType="Self.EMRN" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

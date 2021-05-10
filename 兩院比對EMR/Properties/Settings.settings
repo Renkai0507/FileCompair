@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="兩院比對EMR.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Mainhost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">zckemrb</Value>
+    </Setting>
+    <Setting Name="Mainpath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\EMR\DATA</Value>
+    </Setting>
+    <Setting Name="Awayhost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">zptemra</Value>
+    </Setting>
+    <Setting Name="Awaypath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\EMR\DATA</Value>
+    </Setting>
+    <Setting Name="Autorun" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

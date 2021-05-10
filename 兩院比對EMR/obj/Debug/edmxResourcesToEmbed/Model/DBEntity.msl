@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Compair_DIFF">
+      <EntityTypeMapping TypeName="DBModel.Compair_DIFF">
+        <MappingFragment StoreEntitySet="Compair_DIFF">
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Hostname" ColumnName="Hostname" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Host">
+      <EntityTypeMapping TypeName="DBModel.Host">
+        <MappingFragment StoreEntitySet="Host">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Host_name" ColumnName="Host_name" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TmpSave">
+      <EntityTypeMapping TypeName="DBModel.TmpSave">
+        <MappingFragment StoreEntitySet="TmpSave">
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="Hostname" ColumnName="Hostname" />
+          <ScalarProperty Name="Filepath" ColumnName="Filepath" />
+          <ScalarProperty Name="SaveDate" ColumnName="SaveDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

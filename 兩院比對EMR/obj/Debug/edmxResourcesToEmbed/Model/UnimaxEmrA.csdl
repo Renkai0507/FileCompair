@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UnimaxEMRModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMRN">
+    <Key>
+      <PropertyRef Name="GenDate" />
+      <PropertyRef Name="SeqNo" />
+    </Key>
+    <Property Name="GenDate" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="SeqNo" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="FormNo" Type="Int32" />
+    <Property Name="Clerk" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SysDate" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="sysTime" Type="Int32" />
+    <Property Name="CertDate" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="CertTime" Type="Int32" />
+    <Property Name="Finished" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="TransNo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ProgId" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="SysID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Computer" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ChartNo" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="keyDate" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="DupNo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="BedNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Source" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="InpSerNo" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="PtName" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="Decimal" Precision="8" Scale="0" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="IDNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="OpdKey" Type="String" MaxLength="23" FixedLength="false" Unicode="false" />
+    <Property Name="Batch" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Filler" Type="String" MaxLength="180" FixedLength="false" Unicode="false" />
+    <Property Name="Zone" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="SubForm" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ExtCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SpecialChart" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentNo" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Content" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImageFileName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ModDate" Type="DateTime" Precision="3" />
+    <Property Name="ModUser" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="COLLECTDATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="COLLECTSEQ" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="COLLECTCLERK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="UnimaxEMRA" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMRN" EntityType="Self.EMRN" />
+  </EntityContainer>
+</Schema>
